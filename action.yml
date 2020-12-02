@@ -1,0 +1,13 @@
+name: 'Github Secrets To Env Variables'
+description: 'Dynamically parse all secrets in repo to env variables.'
+author:  'Mauricio Martinez <mauricio.martinez@digitalonus.com>'
+branding:
+  icon: 'cloud'
+  color: 'purple'
+inputs:
+  secrets:
+    description: 'Secrets context'
+    required: true
+runs:
+  using: 'docker'
+  image: './Dockerfile'
